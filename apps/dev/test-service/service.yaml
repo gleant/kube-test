@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: test-service
+  labels:
+    app: test-service
+spec:
+  selector:
+    app: test-service
+  ports:
+    - port: 80
+      targetPort: 8080
+      name: server
